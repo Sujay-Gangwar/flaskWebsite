@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Hi Foodies!!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/post">Latest Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1 align='center'>Dosa Sambar </h1>
+                            <h3 class="subheading">Sambar recipe :</h3>
+                            <h5 align='justify'>Sambar Recipe! Make the ultimate sambar at home with this easy recipe! Sambar, a South Indian lentil and mixed vegetable stew is the comfort food at its best. This classic dish is so easy to make and is so heavenly that you will turn to time and again. This traditional sambar is hearty, super flavorful and loaded with vegetables, spices and herbs. Not to mention, it’s healthy, protein packed and keeps you full longer. Serve it with rice, soft idli, plain dosa, Crispy medu vada or Ven Pongal.</h5>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Swasthi</a>
+                                on September 18, 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7"><br>
+                        <h4>About Sambar...</h4>
+                        <p>Sambar is a South Indian stew made with lentils, mixed vegetables, tamarind, herbs, spices & a special aromatic spice powder known as sambar powder. This spice powder is the key to make a good sambar. A variety of spices & lentils are used to make this powder. Most traditional homes make their own sambhar masala powder to suit their taste buds.</p>
+
+                        <p>In the modern times, many people prefer to buy the store bought powder as it is convenient. I avoid buying any spice powders and prefer to make my own for the best aroma and taste.</p>
+
+                         <img class="img-fluid" src=" {{ url_for('static', filename='assets/img/sambar-recipe.jpg')}}"/>
+                         <p>Most times I make the instant powder while the dal cooks as nothing beats the aroma of fresh roasted & ground sambar powder.In this post I have also shared the recipe of sambar powder just enough for this sambar recipe. So I suggest making the sambhar powder too while you cook the dal as it is more flavorful, hygienic & you know what goes into it.</p>
+
+                         <p>You also can check this post on<a href="https://www.indianhealthyrecipes.com/sambar-masala-powder-recipe/"> how to make sambar powder </a> if you prefer to stock up for a month or two. If you have the powder ready, it is very quick to make the vegetable sambhar anytime.</p>
+
+                        <p><h5>Making Sambar :</h5></p>
+                        <p>There are different ways a sambar is made. But as I mentioned this is my mom’s recipe so I make the same way and always felt every step I shared below is the key to enhance the flavour and taste quotient.
+                        <br>
+                        1.The first step is to pressure cook lentils until soft and mushy. You can either pressure cook or cook them in a pot.
+                        <br>
+                        2.The second step is to cook mixed vegetables until tender in lots of water.
+                        <br>
+                        3.Then the third step is to simmer the vegetable stock with sambar powder.
+                        <br>
+                        4.Next dal is mixed and simmered briefly to mingle with the amazing flavors.
+                        <br>
+                        5.Lastly an aromatic tempering is done to give a final touch to the sambar. This is done by frying the spices & herbs in pure ghee or oil & poured over the cooked sambhar.
+                        <br></p>
+                        <h3>Dosa recepie</h3>
+                        <p> Dosa recipe, Learn how to make dosa batter at home. This is a detailed post that will guide you to make dosas of all kinds – soft, crispy, restaurant style, home style and healthy dosas. No matter you are a beginner or an experienced cook the tips & tricks mentioned in this post will help you to master the techniques of making the best South Indian dosa.
+                        </p>
+                        <img class="img-fluid" src=" {{ url_for('static', filename='assets/img/dosa_recipe.jpg')}}"/>
+                        <h4>Steps to make dosa batter</h4>
+                        <p>
+                        <br>
+                        1.Add ½ cup urad dal (skinned black whole lentils), 2 tablespoon chana dal (bengal gram) and ½ teaspoon methi seeds to a large pot
+                        <br>
+                        2.Add 1½ cups rice to another pot.
+                        <br>
+                        3. Rinse dals thoroughly a few times and soak in lots of water for 4 hours. During cold weather they can be soaked up to 6 hours or even overnight.
+                        <br>
+                        4.Rinse rice too a few times until the water runs clear. Soak in enough water for 4 hours. Same here as well, during cold weather they can be soaked up to 6 hours or even overnight.
+                        <br>
+                        5.30 mins before blending the batter, rinse and soak 2 tablespoons poha with ¼ cup water for 30 mins.
+                        <br>
+                        6.Add soaked poha to the grinder jar or container first. Drain the water completely from dals and add them along with ½ teaspoon non-iodized salt and ¾ cup water
+
+
+
+                        </p>
+
+                         <blockquote class="blockquote"><em>"If you try this recipe and love it, please leave a Star Rating. This helps us grow and reach many other food lovers like you, who are looking for a perfect tried and tested recipe."</em></blockquote>
+                    </div>
+                </div>
+            </div>
+        </article>
+       
+<!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
+       
